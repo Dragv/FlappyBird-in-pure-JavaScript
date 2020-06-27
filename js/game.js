@@ -4,6 +4,11 @@
   var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
   var isIE = /*@cc_on!@*/false || !!document.documentMode;
 
+  const model = tf.sequential();
+  model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+
+  model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+
   function Game (elementID) {
     var game = this;
     var canvas = document.getElementById(elementID);

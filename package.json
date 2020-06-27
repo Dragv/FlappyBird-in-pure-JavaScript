@@ -1,0 +1,22 @@
+{
+  "name": "flappybird-in-pure-javascript",
+  "version": "1.0.0",
+  "description": "FlappyBird-in-pure-JavaScript =============================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm index.js",
+    "serve": "nodemon -r esm --inspect index.js "
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7"
+  }
+}
